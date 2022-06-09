@@ -1,4 +1,2 @@
-# useDebian
-learn linux by Debian
-this is some word
-
+## useDebian
+learn linux by Debian.
