@@ -76,7 +76,7 @@
     
     6. 连接成功
     
-    7. 有时执行wget或curl来下载国外的东西，需要临时在终端启用代理时，可以使用如下命令
+    7. 有时需要临时在终端启用代理时，可以使用如下命令(不好使)
     
        ```bash
        export http_proxy=http://127.0.0.1:7890
@@ -89,4 +89,25 @@
     >
     > https://bestoko.cc/p/linux-clash-for-windows/
     
-    
+13. 安装网易云
+
+    解决 Linux 下的网易云音乐字体过小问题
+
+    使用编辑器修改 `/opt/netease/netease-cloud-music/netease-cloud-music.bash` 的内容，在最后一行中添加 `--force-device-scale-factor=xxx`。 xxx 是字体放大的倍数
+
+    ```bash
+    #!/bin/sh
+    HERE="$(dirname "$(readlink -f "${0}")")"
+    export LD_LIBRARY_PATH="${HERE}"/libs
+    export QT_PLUGIN_PATH="${HERE}"/plugins
+    export QT_QPA_PLATFORM_PLUGIN_PATH="${HERE}"/plugins/platforms
+    exec "${HERE}"/netease-cloud-music --force-device-scale-factor=1.25 $@
+    ```
+
+14. 安装vlc
+
+15. 可选：修改系统语言
+
+    ```bash
+    sudo dpkg-reconfigure locales
+    ```
