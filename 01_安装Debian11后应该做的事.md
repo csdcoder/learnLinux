@@ -13,22 +13,34 @@
 
 4. 安装edge浏览器
 
-   https://www.microsoft.com/zh-cn/edge
+   (1). Download the package from [Edge Web browser](https://www.microsoft.com/zh-cn/edge)
 
-   https://www.linuxcapable.com/zh-CN/%E5%A6%82%E4%BD%95%E5%9C%A8-debian-11-%E4%B8%8A%E5%AE%89%E8%A3%85-Microsoft-Edge/
+   (2). Run commands
 
+   ```bash
+   sudo dpkg -i microsoft-edge-stable_xxxx_xxxx_amd64.deb
+   sudo apt -f install
+   # run the first command again
    ```
-   dpkg -i microsoft-edge-stable_102.0.1245.33-1_amd64.deb
-   sudo apt install microsoft-edge-stable -y
+   
+5. 安装chromium
+
+   ```bash
+   sudo apt install chromium
    ```
 
-5. 安装Chrome或chromium
+6. 安装中文输入法https://juejin.cn/post/7030337513407381541
 
-   https://www.linuxcapable.com/zh-CN/%E5%A6%82%E4%BD%95%E5%9C%A8-debian-11-%E4%B8%8A%E5%AE%89%E8%A3%85%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8/
+   ```bash
+   sudo apt-get install fcitx
+   sudo dpkg -i sogoupinyin_版本号_amd64.deb
+   # 如果安装过程中提示缺少相关依赖，则执行如下命令解决：
+   sudo apt -f install
+   #卸载系统ibus输入法框架
+   sudo apt purge ibus
+   ```
 
-   https://bynss.com/linux/537554.html
-
-4. 安装中文输入法https://juejin.cn/post/7030337513407381541
+   
 
 6. 安装typorahttps://download.typora.io/linux/typora_0.11.18_amd64.deb
 
@@ -62,7 +74,7 @@
 
 7. 安装有道英文词典
 
-8. Nvida
+10. Nvida
 
    ```shell
    # Install tool for hardware detection
@@ -74,5 +86,3 @@
    # Install recommended driver. It is nvidia-driver for me. Yours could be different.
    sudo apt install nvidia-driver
    ```
-
-6. 
