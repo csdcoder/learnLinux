@@ -45,7 +45,9 @@
 
 7. 安装neovim
 
-7. 安装vscode
+9. 安装vscode
+
+   在 vscode 的设置中 enable vimrc配置方式，并填写 vimrc 文件地址
 
 10. 安装gnome-tweaks工具
 
@@ -111,3 +113,23 @@
     ```bash
     sudo dpkg-reconfigure locales
     ```
+    
+16. Linux 下将 CapsLock 转换成 Esc（在gnome-tweaks-tool里可以改键盘映射）
+
+17. 安装Flameshot，Flameshot 的键盘快捷键命令
+
+    ```bash
+    /usr/bin/flameshot gui
+    ```
+
+
+
+
+
+
+
+> 参考信息：
+>
+> [debian系统 设置常用工具的键盘快捷键](https://blog.csdn.net/weixin_43274002/article/details/118229442)
+>
+> 在终端上输入 **dpkg -l | grep xxxx**即可获取对应工具的 command命令
