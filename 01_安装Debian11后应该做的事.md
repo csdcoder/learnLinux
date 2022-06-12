@@ -121,7 +121,14 @@
     ```bash
     /usr/bin/flameshot gui
     ```
+    
+17. 解决风扇不转
 
+    安装 xsensors lm-sensors fancontrol 三个软件包
+    
+    装完后运行sensors命令可查看cpu温度
+    
+18. 配置防火墙
 
 
 
@@ -133,3 +140,5 @@
 > [debian系统 设置常用工具的键盘快捷键](https://blog.csdn.net/weixin_43274002/article/details/118229442)
 >
 > 在终端上输入 **dpkg -l | grep xxxx**即可获取对应工具的 command命令
+>
+> [安装完 Debian 10 后必做的10件事](https://www.jianshu.com/p/01bf94308306)
